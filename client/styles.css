@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Lato&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.login-page{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr min-content;
+}
+
+.image{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url('./images/exercise3.jpg');
+}
+
+.login{
+    background-image: url('./images/night.jpg');
+}
+
+.image, .login{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.login-box{
+    background-color: rgb(240, 187, 15);
+    max-height:600px;
+    margin: 30% auto;
+}
+
+
+.register{
+    max-height:820px;
+    margin: 5% auto;
+    background-color: orange;
+}
+
+.login-box, .register{
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+h1, h2, h4, h5, form{
+    font-family: Lato;
+    text-align: center;
+    margin: 20px auto;
+
+}
+
+h1{
+    font-size: 42px;
+    font-weight: bold;
+}
+
+h5{
+    margin-top: -20px;
+}
+
+form{
+    padding: 20px 0;
+}
+
+form input{
+    margin: 20px;
+    margin-left: -1%;
+    padding: 20px;
+    border-radius: 8px;
+    width: 65%;
+}
+
+
+form a{
+    text-decoration: none;
+}
+
+form a:hover{
+    text-decoration: underline;
+}
+
+button, #submit{
+    margin: 20px 0;
+    padding: 15px;
+    width: 45%;   
+    background-color: #1877f2;
+    color: white;
+    font-family: lato;
+    font-weight: bold;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+}
+
+button:hover, #submit:hover{
+    background-color: #0b438d;
+}
+
+
+.login p{
+    font-size: 16px;
+    color: #1877f2;
+}
+
+.register-btn {
+    margin-top: 10%;
+    background-color: blueviolet;
+
+}
+
+.register-page{
+    background: rgba(0, 0, 0, 0.5);
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.register-close{
+    text-align: right;
+    cursor: pointer;
+}
+
+.register-close:hover{
+    font-weight: bold;
+    font-size: larger;
+
+}
+
+.register-btn:hover{
+    background-color: rgb(79, 11, 144);
+}
+
+footer{
+    grid-column: 1/-1;
+    margin: 15px 0;
+    font-family: roboto;
+    color: rgb(91,113,131);
+    font-size: 16px;
+    text-align: center;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.login-footer a{
+    text-decoration: none;
+    color: #1877f2;
+    margin: 25px;
+}
+
+.login-footer a:hover, .dashboard-footer a:hover{
+    font-weight: bold;
+    font-size: 102%;
+}
+
+
+/* Register Page */
+.dashboard-bg{
+    background-image: url('./images/water3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dashboard-page{
+    width: 1000px;
+    margin: 100px auto;
+    border-radius: 10px;
+    background-color: rgb(255, 166, 2) ;
+}
+
+.dashboard-footer a{
+    text-decoration: none;
+    color: #1877f2;
+    margin: 15px;
+}
+
+/* Index page */
+
+.dashboard-nav{
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.dashboard-nav li{
+    margin: 20px;
+    color: #1877f2;
+    font-family: Lato;
+    font-size: 20px;
+}
+
+.dashboard-nav li:hover{
+    text-decoration: underline;
+}
+
+.dashboard-footer{
+   padding: 5px 0;
+}
+
+
+button, .dashboard-nav li, #timeframe, #submit {
+    cursor: pointer;
+}
+
+#timeframe{
+    font-family: lato;
+    font-size: 18px;
+}
+
+
+/* Habits List Styling */
+
+
+.habits {
+    text-align: left;
+    list-style: none;
+  }
+  
+  .habits li {
+    font-family: lato;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin: 0 25px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+.habits label {
+    flex: 1;
+    cursor: pointer;
+}
+
+.habits label:hover {
+    background-color:  rgb(221, 145, 5);
+    margin: 10px;
+}
+
+.add-habit label{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.habits input{
+    margin-right: 5%;
+    display: none;
+}
+
+.habits input, label:before{
+    margin-right: 5%;
+}
+
+.habits input:checked + label {
+    text-decoration: line-through;
+    color: black;
+  
+}
+
+.habit-btns {
+    display: flex;
+    justify-content: right;
+    margin: 15px;
+    width: 35%;
+    outline: 0;
+    border: 0;
+    border-radius: 5px; 
+}
+
+.add-habit input{
+    padding: 20px;
+    margin: 10px;
+    outline:0;
+    border: 0;
+    border-radius: 5px;
+}
+
+.add-habit select{
+    border-radius: 5px;
+    border: none;
+}
+
+.add-habit select {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.add-habit p{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.frequency{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+} 
+
+@media (max-width: 952px){
+
+    .login{
+        margin: 0 -10px;
+        background-image: none;
+        background-color: white;
+        position: absolute;
+        left: 10px;
+        height: 93%;
+    }
+    .login-box{
+        background-color: rgb(240, 187, 15);
+        max-height:600px;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .login-footer a, .login-footer span{
+        font-size: 14px;
+    }
+
+    .dashboard-page{
+        background-image: none;
+        width: 800px;
+        height: 150%;
+        border-radius: 10px;
+        background-color: rgb(255, 166, 2);
+    }
+}
+
+@media (max-width: 584px){
+
+    .dashboard-page{
+        background-image: none;
+        width: 500px;
+        height: 100%;
+        border-radius: 10px;
+        background-color: rgb(255, 166, 2);
+    }
+    
+    button{
+        font-size: 10px;
+        text-align: center;
+    }
+}

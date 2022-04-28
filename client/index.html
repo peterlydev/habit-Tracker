@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="dashboard-bg" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tracket Dashboard</title>
+    <script defer src="./bundle.js"></script>
+</head>
+<body>
+    <section class="dashboard-page">
+        <div class="dashboard">
+            <div class="dashboard-box">
+                <nav>
+                    <ul class="dashboard-nav">
+                        <li>Account</li>
+                        <li id="logout">Log Out</li>
+                    </ul>
+                </nav>
+                <h1>TRACKET</h1>
+                <h2>GOT A HABIT? TRACKET!</h2>
+                <h2 id="user-msg">Choose a Goal you would like to achieve..</h2>
+                <p></p>
+                <form class="add-habit">
+                    <input class="habit" type="text" name="habit_name" placeholder="Enter Goal..." required/>
+                    <input class="reps" type="number" name="repetitions" placeholder="How often?" min="1" max="10" required/>
+                    <div class="frequency">
+                    <label for="timeframe">Frequency: </label>
+                    <div class="mid-form">
+                    <select name="frequency" id="timeframe">
+                        <option value="Daily">Daily</option>
+                        <option value="Weekly">Weekly</option>
+                        <option value="Monthly">Monthly</option>
+                        <option value="Yearly">Yearly</option>
+                    </select>
+                    <p class="streak">Streak: 0</p>
+                </div>
+                </div>
+                <input id="submit" type="submit" value="Add Goal!">
+                </form>
+                <div class="habits">
+                    <ul class="habit-list">
+                        <!-- <li>Loading...</li> -->
+
+                    </ul>
+
+                </div>
+                <div class="streak"></div>
+            </div>
+        </div>
+        <footer class="dashboard-footer">
+            <nav>
+                <a href="#">About</a>
+                <a href="#">Help</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">iPhone App</a>
+                <a href="#">Android App</a>
+                <a href="#">Settings</a>
+                <span>&copy; 2022 App/Company Name</span>
+            </nav> 
+        </footer>
+    </section>
+    <!-- <script src="./js/login.js"></script> -->
+    <!-- <script src="./js/requests.js"></script> -->
+</body>
+</html>
+
