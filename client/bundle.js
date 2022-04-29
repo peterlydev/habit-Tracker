@@ -6,7 +6,7 @@ const jwt_decode = require('jwt-decode');
 //     ? 'http://localhost:3000'
 //     : '(link for heroku)';
 
-const url = 'http://localhost:3000';
+const url = 'https://lap-2-project.herokuapp.com/';
 const currUser = localStorage.getItem('username');
 
 function currentUser() {
