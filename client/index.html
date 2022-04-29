@@ -1,56 +1,51 @@
 <!DOCTYPE html>
-<html class="dashboard-bg" lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Tracket Dashboard</title>
+    <title>Tracket Login</title>
     <script defer src="./bundle.js"></script>
 </head>
 <body>
-    <section class="dashboard-page">
-        <div class="dashboard">
-            <div class="dashboard-box">
-                <nav>
-                    <ul class="dashboard-nav">
-                        <li>Account</li>
-                        <li id="logout">Log Out</li>
-                    </ul>
-                </nav>
-                <h1>TRACKET</h1>
-                <h2>GOT A HABIT? TRACKET!</h2>
-                <h2 id="user-msg">Choose a Goal you would like to achieve..</h2>
-                <p></p>
-                <form class="add-habit">
-                    <input class="habit" type="text" name="habit_name" placeholder="Enter Goal..." required/>
-                    <input class="reps" type="number" name="repetitions" placeholder="How often?" min="1" max="10" required/>
-                    <div class="frequency">
-                    <label for="timeframe">Frequency: </label>
-                    <div class="mid-form">
-                    <select name="frequency" id="timeframe">
-                        <option value="Daily">Daily</option>
-                        <option value="Weekly">Weekly</option>
-                        <option value="Monthly">Monthly</option>
-                        <option value="Yearly">Yearly</option>
-                    </select>
-                    <p class="streak">Streak: 0</p>
+    <section class="login-page">
+        <div class="image">
+        </div>
+        <div class="login">
+            <div class="login-box">
+                <h1 id="header">TRACKET</h1>
+                <h2 id="slogan">GOT A HABIT? TRACKET!</h2>
+                <form id="login-form">
+                    <input id="username" name="username" type="text" placeholder="Enter Username">
+                    <input type="password" id="login-password" name="password" class="password" placeholder="Enter Password">
+                    <button class="login-btn" id="login-btn" type="submit" formmethod="post">Login</button>
+                    <p><a id="forgot-pw-link" href="#">Forgotten Password?</a></p>
+                    <button class="register-btn">Create New Account</button>
+                </form>         
+                    <div id="register-div" class="register-page">
+                        <div class="register">
+                            <div class="register-close">X</div>
+                            <div class="register-content">
+                                <h1>TRACKET</h1>
+                                <h2>GOT A HABIT? TRACKET!</h2>
+                                <h4 id="create-msg">Create An Account</h4>
+                                <h5 id="quick-and-easy-msg">It's quick and easy!</h5>
+                                <form id="register-form">
+                                    <input type="text" id="first-name" name="first_name" placeholder="Enter First Name"><br>
+                                    <input type="text" id="last-name" name="surname" placeholder="Enter Last Name"><br>
+                                    <input type="text" id="username-register" class="username" name="username" placeholder="Enter Username"><br>
+                                    <input type="password" id="password-register" class="password" name="password" placeholder="Enter Password"><br>
+                                    <button class="register-btn" id="register-btn" type="submit" formmethod="post">Sign me up!</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                </div>
-                <input id="submit" type="submit" value="Add Goal!">
-                </form>
-                <div class="habits">
-                    <ul class="habit-list">
-                        <!-- <li>Loading...</li> -->
-
-                    </ul>
-
-                </div>
-                <div class="streak"></div>
             </div>
         </div>
-        <footer class="dashboard-footer">
-            <nav>
+    </div>
+        <footer id="footer" class="login-footer">
+            <nav id="footer-nav">
                 <a href="#">About</a>
                 <a href="#">Help</a>
                 <a href="#">Terms of Service</a>
@@ -58,7 +53,7 @@
                 <a href="#">iPhone App</a>
                 <a href="#">Android App</a>
                 <a href="#">Settings</a>
-                <span>&copy; 2022 App/Company Name</span>
+                <span>&copy; 2022 Tracket Ltd</span>
             </nav> 
         </footer>
     </section>
@@ -66,4 +61,3 @@
     <!-- <script src="./js/requests.js"></script> -->
 </body>
 </html>
-

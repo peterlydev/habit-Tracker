@@ -126,7 +126,7 @@ function login(data){
     localStorage.setItem('username', payload.username);
     // console.log(window.location.pathname);
     // console.log(window.location.href);
-    window.location.replace("index.html");
+    window.location.replace("dashboard.html");
     // window.location.pathname = '../index.html';
 }
 
@@ -134,7 +134,7 @@ function logout(){
     console.log('working!')
     localStorage.clear();
     window.location.reload();
-    window.location.replace('login.html');
+    window.location.replace('index.html');
 }
 
 
